@@ -11,3 +11,16 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+#vickyimg{
+  /* width: 50%;
+  height: 10%;
+  border-radius: 100%; */
+}
+#menu{
+  display: none;
+}
+
+nav ul li a:focus{
+  color: red;
+}

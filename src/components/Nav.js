@@ -1,43 +1,34 @@
-import React ,{ useEffect, useRef } from "react";
+import React, { useEffect, useRef } from "react";
 import Typed from 'typed.js';
-
+import VickyAnimation from './img/vp.png'
 export default function Nav() {
 
-    function TypingAnimation(){
-        const typedRef = useRef(null);
-
-        useEffect(() => {
-            const options = {
-                strings: ['', 'FullStack Developer,', 'Frontend Developer,', 'Backend Developer,', 'Mobile Apps Developer.'],
-                typeSpeed: 100,
-                backSpeed: 60,
-                loop: true
-            };
-
-            // Initialize Typed instance
-            const typedInstance = new Typed(typedRef.current, options);
-
-            // Clean up on unmount
-            return () => {
-                typedInstance.destroy();
-            };
-        }, []);
-
-        document.getElementById('degination').innerText=typedRef;
+    function show() {
+        document.getElementById('menu').style.display = "block";
+        document.getElementById('show').style.display = "none";
+        document.getElementById('close').style.display = "block";
     }
+
+    function hide(){
+        document.getElementById('menu').style.display = "none";
+        document.getElementById('show').style.display = "block";
+        document.getElementById('close').style.display = "none";
+    }
+
     return (
         <>
             <div class="w-full h-full bg-gray-900 dark:bg-gray-200">
                 <header class="lg:px-16 px-4 flex flex-wrap items-center py-4 shadow-lg">
-                    <div class="flex-1 flex justify-between items-center">
+                    <div class="flex-1 flex justify-space items-center">
                         <img
-                            class="sm:w-[10rem] xs:w-[7rem]"
-                            src="https://techakim.com/sam/tg/7268/li/imgs/samlogo2.png"
+                            class="rounded-full md:w-[10%] sm:max-w-[5%] w-[10%] xs:max-w-[6%]"
+                            src="https://media.istockphoto.com/id/1204088265/vector/vector-illustration-abstract-letter-b-gradient-colorful.jpg?s=612x612&w=0&k=20&c=11xLGYoKbaM7dFuxhmFhGPcEewI3CsK2npJ29mOkftI="
                             alt="Logo"
                         />
-                    </div>
+                        <h1 className="ml-2 text-2xl text-bold text-white">vickyPortfolio</h1>
+                        1                    </div>
                     <label for="menu-toggle" class="pointer-cursor md:hidden block">
-                        <svg
+                        <svg onClick={show} id="show"
                             class="fill-current text-gray-200"
                             xmlns="http://www.w3.org/2000/svg"
                             width="20"
@@ -47,42 +38,46 @@ export default function Nav() {
                             <title>menu</title>
                             <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
                         </svg>
+                        <svg onClick={hide} style={{display:"none"}} id="close" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-6 text-white">
+                            <path strokeLinecap="round" strokeLinejoin="round" d="M6 18 18 6M6 6l12 12" />
+                        </svg>
+
                     </label>
                     <input class="hidden" type="checkbox" id="menu-toggle" />
 
                     <div
-                        class="hidden md:flex md:items-center md:w-auto w-full"
+                        class="ml-10 md:flex md:items-center md:w-auto w-full"
                         id="menu"
                     >
                         <nav>
                             <ul class="md:flex items-center justify-between text-base text-gray-100 dark:text-gray-600 pt-4 md:pt-0">
                                 <li>
-                                    <a class="md:p-4 py-3 px-0 block text-rose-500" href="#">
+                                    <a class="w-14 text-center md:p-4 py-2 px-0 block hover:animate-pulse hover:text-black hover:bg-white round-full" href="#">
                                         Home
                                     </a>
                                 </li>
                                 <li>
-                                    <a class="md:p-4 py-3 px-0 block" href="#">
+                                    <a class="w-20 text-center md:p-4 py-2 px-0 block hover:animate-pulse hover:text-black hover:bg-white " href="#">
                                         About Me
                                     </a>
                                 </li>
                                 <li>
-                                    <a class="md:p-4 py-3 px-0 block" href="#">
+                                    <a class="w-20 text-center md:p-4 py-2 px-0 block hover:animate-pulse hover:text-black hover:bg-white " href="#">
                                         Education
                                     </a>
                                 </li>
                                 <li>
-                                    <a class="md:p-4 py-3 px-0 block" href="#">
+                                    <a class="w-20 text-center md:p-4 py-2 px-0 block hover:animate-pulse hover:text-black hover:bg-white " href="#">
                                         Experience
                                     </a>
                                 </li>
                                 <li>
-                                    <a class="md:p-4 py-3 px-0 block" href="#">
+                                    <a class="w-16 text-center md:p-4 py-2 px-0 block hover:animate-pulse hover:text-black hover:bg-white " href="#">
                                         Projects
                                     </a>
                                 </li>
                                 <li>
-                                    <a class="md:p-4 py-3 px-0 block md:mb-0 mb-2" href="#">
+                                    <a class="w-16 text-center md:p-4 py-3 px-0 block md:mb-0 mb-2 hover:animate-pulse hover:text-black hover:bg-white" href="#">
                                         Contact
                                     </a>
                                 </li>
@@ -90,37 +85,6 @@ export default function Nav() {
                         </nav>
                     </div>
                 </header>
-
-                <div class="h-screen w-full mx-auto py-20 xl:px-16 xs:px-8 flex md:flex-row xs:flex-col gap-4 justify-center items-center pb-10 pt-4">
-                    <div class="w-full">
-                        <img
-                            class="rounded-full md:max-w-[70%] sm:max-w-[50%] xs:max-w-[60%] mx-auto"
-                            src="https://techakim.com/sam/tg/7268/li/imgs/profile.jpg"
-                            alt="My Image"
-                        />
-                    </div>
-                    <div class="w-full flex flex-col justify-center gap-4 text-white dark:text-gray-800 md:mt-0 sm:mt-8 xs:mt-4">
-                        <h1 class="text-4xl font-semibold font-serif">
-                            Hello, I'm Birendra Kumar Pradhan
-                        </h1>
-                        <h3 onLoad id="degination" class="capitalize text-rose-400">
-                            i'm {}
-                            <span class="typing text-green-500 dark:text-green-700">
-                                fullstack developer
-                            </span>
-                        </h3>
-                        <p>
-                            Experienced full-stack developer with 4+ years of expertise in
-                            Laravel, NestJS, Nuxt.js, Next.js, Android, and some Flutter
-                            experience.
-                        </p>
-                        <div class="sm:mt-4 xs:mt-2">
-                            <button class="px-6 py-1 bg-rose-500 text-white rounded-sm">
-                                Get In Touch
-                            </button>
-                        </div>
-                    </div>
-                </div>
             </div>
         </>
     );

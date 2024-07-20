@@ -15,11 +15,49 @@ code {
 nav ul li a:focus {
   color: red;
 }
-nav ul li a:active{
+nav ul li a:active {
   color: red;
 }
+#logo {
+  width: 7vh;
+  height: 7vh;
+  border-radius: 100%;
+  object-fit: fill;
+  filter: drop-shadow(2px 4px 0.5em rgb(20, 77, 220));
+}
+
 @media screen and (max-width: 600px) {
   #menu {
     display: none;
+  }
+
+  #logo {
+    width: 4vh;
+    height: 4vh;
+    border-radius: 100%;
+    object-fit: fill;
+    filter: drop-shadow(2px 4px 0.5em rgb(20, 77, 220));
+  }
+}
+
+/* Home style start  */
+#vickyimg {
+  width: 70vh;
+  height: 70vh;
+  border-radius: 100%;
+  object-fit: fill;
+  filter: drop-shadow(2px 4px 0.97em rgb(20, 77, 220));
+}
+
+@media screen and (max-width: 600px) {
+  #vickyimg {
+    width: 30vh;
+    height: 30vh;
+    border-radius: 100%;
+    object-fit: fill;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    filter: drop-shadow(2px 4px 0.97em rgb(20, 77, 220));
   }
 }

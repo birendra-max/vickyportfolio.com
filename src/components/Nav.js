@@ -1,4 +1,6 @@
 import React from "react";
+import logo from './img/vp.png';
+import VickyImg from './img/vickyimg.png';
 export default function Nav() {
 
     function show() {
@@ -17,10 +19,10 @@ export default function Nav() {
         <>
             <div className="w-full h-full bg-gray-900 dark:bg-gray-900 dark:text-white">
                 <header className="lg:px-16 px-4 flex flex-wrap items-center py-4 shadow-lg">
-                    <div className="md:pl-10 flex-1 flex justify-space items-center">
-                        <img
+                    <div id="loader" className="md:pl-10 flex-1 flex justify-space items-center">
+                        <img id="logo"
                             className="rounded-full md:w-[10%] sm:max-w-[5%] w-[10%] xs:max-w-[6%]"
-                            src="https://media.istockphoto.com/id/1204088265/vector/vector-illustration-abstract-letter-b-gradient-colorful.jpg?s=612x612&w=0&k=20&c=11xLGYoKbaM7dFuxhmFhGPcEewI3CsK2npJ29mOkftI="
+                            src={logo}
                             alt="Logo"
                         />
                         <h1 className="ml-2 text-2xl text-bold text-white font-bold">vickyPortfolio</h1>
@@ -45,37 +47,26 @@ export default function Nav() {
 
                     <div
                         className="md:ml-0 ml-10 md:flex md:items-center md:w-auto w-full"
-                        id="menu"
-                    >
+                        id="menu">
                         <nav>
                             <ul className="md:flex items-center justify-between text-base text-gray-100 dark:text-gray-600 pt-4 md:pt-0">
                                 <li>
-                                    <a className="dark:text-white font-semibold	md:w-full w-28 pl-4 md:p-4 py-2 px-0 block hover:animate-pulse hover:text-black hover:bg-white round-full" href="/">
+                                    <a className="dark:text-white font-semibold	md:w-full w-28 pl-4 md:p-4 py-2 px-0 block hover:animate-pulse hover:text-black hover:bg-blue-200 round-full" href="/">
                                         Home
                                     </a>
                                 </li>
                                 <li>
-                                    <a className="dark:text-white font-semibold	md:w-full w-28 pl-4 md:p-4 py-2 px-0 block hover:animate-pulse hover:text-black hover:bg-white " href="/">
+                                    <a className="dark:text-white font-semibold	md:w-full w-28 pl-4 md:p-4 py-2 px-0 block hover:animate-pulse hover:text-black hover:bg-red-200 " href="/">
                                         About Me
                                     </a>
                                 </li>
                                 <li>
-                                    <a className="dark:text-white font-semibold	md:w-full w-28 pl-4 md:p-4 py-2 px-0 block hover:animate-pulse hover:text-black hover:bg-white " href="/">
-                                        Education
-                                    </a>
-                                </li>
-                                <li>
-                                    <a className="dark:text-white font-semibold	md:w-full w-28 pl-4 md:p-4 py-2 px-0 block hover:animate-pulse hover:text-black hover:bg-white " href="/">
-                                        Experience
-                                    </a>
-                                </li>
-                                <li>
-                                    <a className="dark:text-white font-semibold	md:w-full w-28 pl-4 md:p-4 py-2 px-0 block hover:animate-pulse hover:text-black hover:bg-white " href="/">
+                                    <a className="dark:text-white font-semibold	md:w-full w-28 pl-4 md:p-4 py-2 px-0 block hover:animate-pulse hover:text-black hover:bg-orange-200 " href="/">
                                         Projects
                                     </a>
                                 </li>
                                 <li>
-                                    <a className="dark:text-white font-semibold	md:w-full w-28 pl-4 md:p-4 py-3 px-0 block md:mb-0 mb-2 hover:animate-pulse hover:text-black hover:bg-white" href="/">
+                                    <a className="dark:text-white font-semibold	md:w-full w-28 pl-4 md:p-4 py-3 px-0 block md:mb-0 mb-2 hover:animate-pulse hover:text-black hover:bg-green-200" href="/">
                                         Contact
                                     </a>
                                 </li>

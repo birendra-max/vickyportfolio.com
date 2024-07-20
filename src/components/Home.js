@@ -1,53 +1,68 @@
 import React from "react";
 import VickyImg from "./img/vickyimg.png";
+import About from "./About";
 
 export default function Home() {
+    function darkMode() {
+        document.getElementById("body").style.backgroundColor = "black";
+        document.getElementById("body").style.color = "white";
+        document.getElementById("root").removeAttribute("class");
+    }
+
+    function whiteMode() {
+        document.getElementById("body").style.backgroundColor = "bg-blue-200";
+        document.getElementById("body").style.color = "black";
+        document.getElementById("root").classList.add("bg-gradient-to-b", "from-gray-50", "via-white", "bg-blue-200");
+
+    }
+
     return (
         <>
             {/* <!-- Hero --> */}
-            <div className="">
+            <div id="home">
                 <section className="pt-5">
-                    <div className="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
-                        <div className="py-4 grid max-w-md grid-cols-1 mx-auto lg:grid-cols-12 gap-x-6 gap-y-8 lg:max-w-none ">
-                            <div className="md:order-1   order-2 self-center lg:col-span-4">
-                                <h1 className="text-3xl font-bold text-gray-900 sm:text-4xl xl:text-3xl">
-                                    Hey 👋 I am <span className="border-b-4 border-green-600">Birendra Kumar Pradhan</span> , welcome to my site.
+                    <div className="px-4 mx-auto sm:px-4 lg:px-3 max-w-7xl">
+                        <div className="py-4 grid max-w-md grid-cols-1 mx-auto lg:grid-cols-12 gap-x-10 gap-y-2 lg:max-w-none ">
+                            <div className="md:order-1 order-2 self-center lg:col-span-4">
+                                <h1 className="text-3xl font-bold   sm:text-4xl xl:text-3xl">
+                                    Hey 👋 I am{" "}
+                                    <span className="border-b-4 border-green-600">
+                                        Birendra Kumar Pradhan
+                                    </span>{" "}
+                                    , welcome to my site.
                                 </h1>
                                 <p className="mt-5 text-base font-normal leading-7 text-gray-500">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                    Vehicula massa in enim luctus.
+                                    You may not always get what you wish for, but through hard
+                                    work, you get what you deserve.
                                 </p>
                                 <div className="relative inline-flex mt-9 group">
                                     <div className=" rounded-xl blur-lg filter group-hover:opacity-100 group-hover:duration-200"></div>
 
-                                    <div class="p-2 md:w-45 ">
-                                        <div class="flex items-center p-4 bg-red-200 rounded-lg shadow-xs cursor-pointer hover:bg-red-500 hover:text-gray-100">
-                                            <div>
-                                                <p class="text-sm font-medium ml-2 ">
-                                                    Read Exclusive Blog
-                                                </p>
+                                    <a href="/" class="inline-block px-6 py-3 text-sm font-medium leading-6 text-center text-white uppercase transition bg-pink-500 rounded shadow ripple hover:shadow-lg hover:bg-pink-600 focus:outline-none">
+                                        Hire Me
+                                    </a>
 
-                                            </div>
-                                        </div>
-                                    </div>
+                                    <a href="#About" class="ml-4 inline-block px-6 py-3 text-sm font-medium leading-6 text-center text-white uppercase transition bg-green-500 rounded shadow ripple hover:shadow-lg hover:bg-green-600 focus:outline-none">
+                                        About Me
+                                    </a>
                                 </div>
                             </div>
 
-                            <div className="md:order-3   order-3 self-end lg:order-last lg:pb-20 lg:col-span-3">
-                                <p className="text-xs font-bold tracking-widest text-gray-500 uppercase">
+                            <div className="md:order-3  order-3 self-end lg:order-last lg:pb-20 lg:col-span-3">
+                                <p className="text-xs font-bold tracking-widest uppercase">
                                     ⚡️ Latest Picks
                                 </p>
 
-                                <div className="mt-6 space-y-6 lg:space-y-8">
-                                    <div className="relative overflow-hidden p-1 rounded-lg hover:bg-red-200">
+                                <div className="mt-6 space-y-6 lg:space-y-8 md:w-55">
+                                    <div className="relative overflow-hidden p-1 rounded-lg hover:bg-red-200 hover:text-black">
                                         <div className="flex items-start lg:items-center">
                                             <img
                                                 className="object-cover w-12 h-12 rounded-lg shrink-0"
                                                 src="https://landingfoliocom.imgix.net/store/collection/clarity-blog/images/hero/1/thumbnail-1.png"
                                                 alt=""
                                             />
-                                            <p className="ml-5 text-base font-bold leading-6 text-gray-900">
-                                                <a href="#" title="">
+                                            <p className="ml-3 text-base font-bold leading-6">
+                                                <a href="/" title="">
                                                     How a visual artist redefines success in graphic
                                                     design
                                                     <span
@@ -59,15 +74,15 @@ export default function Home() {
                                         </div>
                                     </div>
 
-                                    <div className="relative overflow-hidden p-1 hover:bg-indigo-200 rounded-lg">
+                                    <div className="relative overflow-hidden p-1 hover:bg-indigo-200 rounded-lg hover:text-black">
                                         <div className="flex items-start lg:items-center">
                                             <img
                                                 className="object-cover w-12 h-12 rounded-lg shrink-0"
                                                 src="https://landingfoliocom.imgix.net/store/collection/clarity-blog/images/hero/1/thumbnail-2.png"
                                                 alt=""
                                             />
-                                            <p className="ml-5 text-base font-bold leading-6 text-gray-900">
-                                                <a href="#" title="">
+                                            <p className="ml-3 text-base font-bold leading-6  ">
+                                                <a href="/" title="">
                                                     How a visual artist redefines success in graphic
                                                     design
                                                     <span
@@ -79,15 +94,15 @@ export default function Home() {
                                         </div>
                                     </div>
 
-                                    <div className="relative overflow-hidden p-1 hover:bg-green-200 rounded-lg">
+                                    <div className="relative overflow-hidden p-1 hover:bg-green-200 rounded-lg hover:text-black">
                                         <div className="flex items-start lg:items-center">
                                             <img
                                                 className="object-cover w-12 h-12 rounded-lg shrink-0"
                                                 src="https://landingfoliocom.imgix.net/store/collection/clarity-blog/images/hero/1/thumbnail-3.png"
                                                 alt=""
                                             />
-                                            <p className="ml-5 text-base font-bold leading-6 text-gray-900">
-                                                <a href="#" title="">
+                                            <p className="ml-3 text-base font-bold leading-6  ">
+                                                <a href="/" title="">
                                                     How a visual artist redefines success in graphic
                                                     design
                                                     <span
@@ -101,10 +116,13 @@ export default function Home() {
                                 </div>
                             </div>
 
-                            <div id="image-container" className="md:order-2  order-1 flex justify-center self-end lg:col-span-5">
+                            <div
+                                id="image-container"
+                                className="md:order-2  order-1 flex justify-center self-end lg:col-span-5 "
+                            >
                                 <img
                                     id="vickyimg"
-                                    className="w-55"
+                                    className="rounded-sm rounded-br-[5rem] rounded-tl-[5rem]"
                                     src={VickyImg}
                                     alt="vickyimg"
                                 />
@@ -116,16 +134,16 @@ export default function Home() {
             {/* <!-- Hero --> */}
 
             {/* <!-- floting button --> */}
-            <div class="group fixed bottom-0 right-0 p-2 pb-6 pr-4 flex items-end justify-end w-24 h-24 ">
-                {/* <!-- main --> */}
-                <div class="text-white shadow-xl flex items-center justify-center p-3 rounded-full bg-gradient-to-r from-cyan-500 to-blue-500 z-50 absolute  ">
+            <div className="group fixed bottom-0 right-0 p-2 pb-6 pr-4 flex items-end justify-end w-24 h-24">
+                {/* <!-- setting icon --> */}
+                <div className="text-white shadow-xl flex items-center justify-center p-3 rounded-full bg-gradient-to-r from-cyan-500 to-blue-500 z-50 absolute cursor-pointer">
                     <svg
                         xmlns="http://www.w3.org/2000/svg"
                         fill="none"
                         viewBox="0 0 24 24"
                         stroke-width="1.5"
                         stroke="currentColor"
-                        class="w-6 h-6 group-hover:rotate-90 transition  transition-all duration-[0.6s]"
+                        className="w-6 h-6 group-hover:rotate-90 transition cursor-pointer  transition-all duration-[0.6s]"
                     >
                         <path
                             stroke-linecap="round"
@@ -139,15 +157,15 @@ export default function Home() {
                         />
                     </svg>
                 </div>
-                {/* <!-- sub left --> */}
-                <div class="absolute rounded-full transition-all duration-[0.2s] ease-out scale-y-0 group-hover:scale-y-100 group-hover:-translate-x-16   flex  p-2 hover:p-3 bg-green-300 scale-100 hover:bg-green-400 text-white">
+                {/* <!-- music start left --> */}
+                <div className="absolute rounded-full transition-all duration-[0.2s] ease-out scale-y-0 group-hover:scale-y-100 group-hover:-translate-x-16   flex  p-2 hover:p-3 bg-green-300 scale-100 hover:bg-green-400 text-white cursor-pointer">
                     <svg
                         xmlns="http://www.w3.org/2000/svg"
                         fill="none"
                         viewBox="0 0 24 24"
                         strokeWidth={1.5}
                         stroke="currentColor"
-                        className="size-6"
+                        className="size-6 cursor-pointer"
                     >
                         <path
                             strokeLinecap="round"
@@ -156,15 +174,18 @@ export default function Home() {
                         />
                     </svg>
                 </div>
-                {/* <!-- sub top --> */}
-                <div class="absolute rounded-full transition-all duration-[0.2s] ease-out scale-x-0 group-hover:scale-x-100 group-hover:-translate-y-16  flex  p-2 hover:p-3 bg-blue-300 hover:bg-blue-400  text-white">
+                {/* <!-- light mode top --> */}
+                <div
+                    onClick={whiteMode}
+                    className="absolute rounded-full transition-all duration-[0.2s] ease-out scale-x-0 group-hover:scale-x-100 group-hover:-translate-y-16  flex  p-2 hover:p-3 bg-blue-300 hover:bg-blue-400  text-white cursor-pointer"
+                >
                     <svg
                         xmlns="http://www.w3.org/2000/svg"
                         fill="none"
                         viewBox="0 0 24 24"
                         strokeWidth={1.5}
                         stroke="currentColor"
-                        className="size-6"
+                        className="size-6 cursor-pointer"
                     >
                         <path
                             strokeLinecap="round"
@@ -173,15 +194,18 @@ export default function Home() {
                         />
                     </svg>
                 </div>
-                {/* <!-- sub middle --> */}
-                <div class="absolute rounded-full transition-all duration-[0.2s] ease-out scale-x-0 group-hover:scale-x-100 group-hover:-translate-y-14 group-hover:-translate-x-14   flex  p-2 hover:p-3 bg-yellow-300 hover:bg-yellow-400 text-white">
+                {/* <!-- dark mode middle --> */}
+                <div
+                    onClick={darkMode}
+                    className="absolute rounded-full transition-all duration-[0.2s] ease-out scale-x-0 group-hover:scale-x-100 group-hover:-translate-y-14 group-hover:-translate-x-14   flex  p-2 hover:p-3 bg-yellow-300 hover:bg-yellow-400 text-white cursor-pointer"
+                >
                     <svg
                         xmlns="http://www.w3.org/2000/svg"
                         fill="none"
                         viewBox="0 0 24 24"
                         strokeWidth={1.5}
                         stroke="currentColor"
-                        className="size-6"
+                        className="size-6 cursor-pointer"
                     >
                         <path
                             strokeLinecap="round"
@@ -193,6 +217,7 @@ export default function Home() {
             </div>
             {/* <!-- floting button --> */}
 
+            <About />
         </>
     );
 }

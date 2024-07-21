@@ -5,11 +5,22 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  z-index: 1;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+#root{
+  width: 100%;
+  overflow-x: hidden;
+}
+/* nav style start  */
+#nav{
+  position:static;
+  z-index: 999;
 }
 nav ul li{
   font-family: "Libre Baskerville", serif;
@@ -28,7 +39,6 @@ nav ul li a:active {
   height: 7vh;
   border-radius: 100%;
   object-fit: fill;
-  filter: drop-shadow(2px 4px 0.5em rgb(20, 77, 220));
 }
 
 @media screen and (max-width: 600px) {
@@ -37,11 +47,11 @@ nav ul li a:active {
   }
 
   #logo {
-    width: 4vh;
-    height: 4vh;
+    width: 6vh;
+    height: 6vh;
     border-radius: 100%;
     object-fit: fill;
-    filter: drop-shadow(2px 4px 0.5em rgb(20, 77, 220));
+    /* filter: drop-shadow(2px 4px 0.5em rgb(20, 77, 220)); */
   }
 }
 

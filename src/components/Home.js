@@ -1,5 +1,5 @@
 import React from "react";
-import VickyImg from "./img/vickyimg.png";
+import VickyImg from "./img/vickyimg3.jpg";
 import About from "./About";
 
 
@@ -8,11 +8,11 @@ export default function Home() {
         <>
             {/* <!-- Hero --> */}
             <div id="home">
-                <section className="pt-5">
-                    <div className="px-4 mx-auto sm:px-4 lg:px-3 max-w-7xl">
-                        <div className="py-4 grid max-w-md grid-cols-1 mx-auto lg:grid-cols-12 gap-x-10 gap-y-2 lg:max-w-none ">
-                            <div className="md:order-1 order-2 self-center lg:col-span-4">
-                                <h1 className="text-3xl font-bold   sm:text-4xl xl:text-3xl">
+                <section className="md:p-8 md:py-8 p-2">
+                    <div className="px-4 mx-auto sm:px-4 lg:px-32 max-w-9xl border border-gray-300 rounded-lg shadow-xl">
+                        <div className="py-8 grid max-w-md grid-cols-1 mx-auto lg:grid-cols-12 gap-x-10 gap-y-2 lg:max-w-none ">
+                            <div className="md:order-1 order-2 self-center lg:col-span-4 md:mb-40 mb-8 mr-4">
+                                <h1 className="text-3xl font-bold   sm:text-4xl xl:text-4xl">
                                     Hey 👋 I am{" "}
                                     <span className="border-b-4 border-green-600">
                                         Birendra Kumar Pradhan
@@ -36,7 +36,7 @@ export default function Home() {
                                 </div>
                             </div>
 
-                            <div className="md:order-3  order-3 self-end lg:order-last lg:pb-20 lg:col-span-3">
+                            <div className=" md:order-3 order-3 self-end lg:order-last lg:pb-20 lg:col-span-3">
                                 <p className="text-xs font-bold tracking-widest uppercase">
                                     ⚡️ Latest Picks
                                 </p>
@@ -110,7 +110,6 @@ export default function Home() {
                             >
                                 <img
                                     id="vickyimg"
-                                    className="rounded-sm rounded-br-[5rem] rounded-tl-[5rem]"
                                     src={VickyImg}
                                     alt="vickyimg"
                                 />

@@ -4,8 +4,8 @@ import LinkedImg from './img/linked-in-img.jfif';
 export default function About() {
     return (
         <>
-            <div id='About' className="h-full p-8 md:mt-20 px-2 md:px-12">
-                <div className="rounded-lg shadow-xl pb-8 bg-white text-black dark:text-black dark:bg-white">
+            <div id='About' className="h-full p-8 md:mt-40 px-2 md:px-12">
+                <div className="rounded-lg shadow-xl pb-8 backdrop-filter backdrop-blur-none backdrop-saturate-150 bg-opacity-75 border-2 border-white border-opacity-10 rounded-2xl">
                     <div className="w-full md:h-[200px] h-[200px]">
                         <img src="https://www.simplilearn.com/ice9/free_resources_article_thumb/is_web_development_good_career.jpg" className="w-full h-full rounded-tl-lg rounded-tr-lg" />
                     </div>
@@ -42,7 +42,7 @@ export default function About() {
 
                 <div className="my-4 flex flex-col 2xl:flex-row space-y-4 2xl:space-y-0 2xl:space-x-4 ">
                     <div className="w-full flex flex-col 2xl:w-1/3">
-                        <div className="flex-1 rounded-lg shadow-xl p-4 bg-white text-black dark:text-black dark:bg-white">
+                        <div className="flex-1 rounded-lg shadow-xl p-4 backdrop-filter backdrop-blur-none backdrop-saturate-150 bg-opacity-75 border-2 border-white border-opacity-10 rounded-2xl ">
                             <h4 className="md:text-xl text-sm font-bold">Personal Info</h4>
                             <ul className="mt-2  ">
                                 <li className="flex border-y py-2">
@@ -90,7 +90,7 @@ export default function About() {
                                 </li>
                             </ul>
                         </div>
-                        <div className="flex-1 rounded-lg shadow-xl mt-4 p-8 bg-white text-black dark:text-black dark:bg-white">
+                        <div className="flex-1 rounded-lg shadow-xl mt-4 p-8 backdrop-filter backdrop-blur-none backdrop-saturate-150 bg-opacity-75 border-2 border-white border-opacity-10 rounded-2xl">
                             <h4 className="text-xl font-bold">Activity log</h4>
                             <div className="relative px-4">
                                 <div className="absolute h-full border border-dashed border-opacity-20 border-secondary"></div>
@@ -173,7 +173,7 @@ export default function About() {
                         </div>
                     </div>
                     <div className="flex flex-col w-full 2xl:w-2/3">
-                        <div className="flex-1 rounded-lg shadow-xl p-8 bg-white text-black dark:text-black dark:bg-white">
+                        <div className="flex-1 rounded-lg shadow-xl p-8 backdrop-filter backdrop-blur-none backdrop-saturate-150 bg-opacity-75 border-2 border-white border-opacity-10 rounded-2xl">
                             <h4 className="text-xl font-bold">About</h4>
                             <p className="mt-2 text-justify">Hello! I'm Birendra Kumar Pradhan, a tech enthusiast from the vibrant state of Odisha. I recently graduated with a BCA degree from Berhampur University in 2023. Currently based in Bangalore, I've been delving into the dynamic tech ecosystem here.Equipped with a solid foundation from Berhampur University, my academic journey has laid the groundwork for a versatile skill set.
                             </p>
@@ -182,11 +182,11 @@ export default function About() {
                                 My expertise in PHP development, MySQL, JavaScript, HTML, and CSS can be effectively utilized.Over the past year, my professional journey has involved intensive freelancing, with a primary focus on developing website in php and wordpress . This experience has not only refined my technical acumen but has also afforded me the opportunity to integrate creative solutions into the digital realm.
                             </p>
                         </div>
-                        <div className="flex-1 rounded-lg shadow-xl mt-4 p-8 bg-white text-black dark:text-black dark:bg-white">
+                        <div className="flex-1 rounded-lg shadow-xl mt-4 p-8 backdrop-filter backdrop-blur-none backdrop-saturate-150 bg-opacity-75 border-2 border-white border-opacity-10 rounded-2xl">
                             <h4 className="text-xl  font-bold">Statistics</h4>
 
                             <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 mt-4">
-                                <div className="px-6 py-6 bg-gray-100 border border-gray-300 rounded-lg shadow-xl">
+                                <div className="px-6 py-6 backdrop-filter backdrop-blur-none backdrop-saturate-150 bg-opacity-75 border-2 border-white border-opacity-10 rounded-2xl">
                                     <div className="flex items-center justify-between">
                                         <span className="font-bold text-sm text-indigo-600">Total Revenue</span>
                                         <span className="text-xs bg-gray-200 hover:bg-gray-500 text-gray-500 hover:text-gray-200 px-2 py-1 rounded-lg transition duration-200 cursor-default">7 days</span>
@@ -206,7 +206,7 @@ export default function About() {
                                         </div>
                                     </div>
                                 </div>
-                                <div className="px-6 py-6 bg-gray-100 bg-white text-black dark:text-black dark:bg-white rounded-lg shadow-xl">
+                                <div className="px-6 py-6 bg-gray-100 backdrop-filter backdrop-blur-none backdrop-saturate-150 bg-opacity-75 border-2 border-white border-opacity-10 rounded-2xl">
                                     <div className="flex items-center justify-between">
                                         <span className="font-bold text-sm text-green-600">New Orders</span>
                                         <span className="text-xs bg-gray-200 hover:bg-gray-500 text-gray-500 hover:text-gray-200 px-2 py-1 rounded-lg transition duration-200 cursor-default">7 days</span>
@@ -226,7 +226,7 @@ export default function About() {
                                         </div>
                                     </div>
                                 </div>
-                                <div className="px-6 py-6 bg-gray-100 border border-gray-300 rounded-lg shadow-xl">
+                                <div className="px-6 py-6 backdrop-filter backdrop-blur-none backdrop-saturate-150 bg-opacity-75 border-2 border-white border-opacity-10 rounded-2xl">
                                     <div className="flex items-center justify-between">
                                         <span className="font-bold text-sm text-blue-600">New Connections</span>
                                         <span className="text-xs bg-gray-200 hover:bg-gray-500 text-gray-500 hover:text-gray-200 px-2 py-1 rounded-lg transition duration-200 cursor-default">7 days</span>
@@ -251,7 +251,7 @@ export default function About() {
                         </div>
                     </div>
                 </div>
-                <div className="rounded-lg shadow-xl p-8 bg-white text-black dark:text-black dark:bg-white">
+                <div className="rounded-lg shadow-xl p-8 backdrop-filter backdrop-blur-none backdrop-saturate-150 bg-opacity-75 border-2 border-white border-opacity-10 rounded-2xl">
                     <div className="flex items-center justify-between">
                         <h4 className="text-xl    font-bold">Connections (532)</h4>
                         <a href="/" title="View All">

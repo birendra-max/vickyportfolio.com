@@ -6,15 +6,14 @@ function App() {
   function darkMode() {
     document.getElementById("body").style.backgroundColor = "black";
     document.getElementById("body").style.color = "white";
-    document.getElementById("root").removeAttribute("class");
-    document.getElementById("body").style.transition = "all 1s";
+    document.getElementById("body").style.transition = "all 2s";
   }
 
   function whiteMode() {
-    document.getElementById("body").style.backgroundColor = "bg-red-200";
+    document.getElementById("body").style.backgroundColor = "white";
     document.getElementById("body").style.color = "black";
-    document.getElementById("root").classList.add("bg-red-200");
-    document.getElementById("body").style.transition = "all 1s";
+    document.getElementById("root").classList.add("white");
+    document.getElementById("body").style.transition = "all 2s";
   }
   return (
     <>

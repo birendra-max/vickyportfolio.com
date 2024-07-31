@@ -9,11 +9,11 @@ export default function Home() {
         <>
             {/* <!-- Hero --> */}
             <div id="home">
-                <section className="md:p-8 md:py-8 p-2">
-                    <div className="px-4 mx-auto sm:px-4 lg:px-32 max-w-9xl border border-gray-300 rounded-lg shadow-xl">
+                <section className="md:p-8 md:py-10 p-2">
+                    <div className="px-4 mx-auto sm:px-4 lg:px-32 max-w-9xl border border-gray-300 rounded-lg shadow-md py-8">
                         <div className="py-8 grid max-w-md grid-cols-1 mx-auto lg:grid-cols-12 gap-x-10 gap-y-2 lg:max-w-none ">
-                            <div className="md:order-1 order-2 self-center lg:col-span-4 md:mb-40 mb-8 mr-4">
-                                <h1 className="text-3xl font-bold   sm:text-4xl xl:text-4xl">
+                            <div className="md:order-1 order-2 self-center lg:col-span-4 mr-4">
+                                <h1 className="text-2xl font-bold  sm:text-4xl xl:text-3xl">
                                     Hey 👋 I am{" "}
                                     <span className="border-b-4 border-green-600">
                                         Birendra Kumar Pradhan
@@ -27,22 +27,22 @@ export default function Home() {
                                 <div className="relative inline-flex mt-9 group">
                                     <div className=" rounded-xl blur-lg filter group-hover:opacity-100 group-hover:duration-200"></div>
 
-                                    <a href="/" class="inline-block px-6 py-3 text-sm font-medium leading-6 text-center text-white uppercase transition bg-pink-500 rounded shadow ripple hover:shadow-lg hover:bg-pink-600 focus:outline-none">
+                                    <a href="/" class="inline-block px-4 py-3 text-sm font-medium leading-6 text-center uppercase transition bg-pink-500 rounded shadow ripple hover:shadow-lg hover:bg-pink-600 focus:outline-none">
                                         Hire Me
                                     </a>
 
-                                    <a href="#About" class="ml-4 inline-block px-6 py-3 text-sm font-medium leading-6 text-center text-white uppercase transition bg-green-500 rounded shadow ripple hover:shadow-lg hover:bg-green-600 focus:outline-none">
+                                    <a href="#About" class="ml-4 inline-block px-4 py-3 text-sm font-medium leading-6 text-center uppercase transition bg-green-500 rounded shadow ripple hover:shadow-lg hover:bg-green-600 focus:outline-none">
                                         About Me
                                     </a>
                                 </div>
                             </div>
 
-                            <div className=" md:order-3 order-3 self-end lg:order-last lg:pb-20 lg:col-span-3">
+                            <div className=" md:order-3 order-3 self-end lg:order-last lg:pb-10 lg:col-span-3">
                                 <p className="text-xs font-bold tracking-widest uppercase">
                                     ⚡️ Latest Picks
                                 </p>
 
-                                <div className="mt-6 space-y-6 lg:space-y-8 md:w-55">
+                                <div className="mt-6 space-y-6 lg:space-y-8 md:w-80">
                                     <div className="relative overflow-hidden p-1 rounded-lg hover:bg-yellow-200 hover:text-black">
                                         <div className="flex items-start lg:items-center">
                                             <img

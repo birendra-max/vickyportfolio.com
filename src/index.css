@@ -108,8 +108,9 @@ nav ul li a:active {
 }
 
 #imgskills {
-  width: 50%;
+  width: 100%;
   aspect-ratio: 4 / 3;
   object-fit: contain;
   mix-blend-mode: color-burn;
+  /* filter: drop-shadow(2px 4px 0.97em rgb(9, 92, 247)); */
 }

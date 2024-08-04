@@ -30,7 +30,8 @@ export default function Nav() {
                                 src={logo1}
                                 alt="Logo"
                             />
-                            <h1 className="ml-2 text-xl md:text-2xl font-bold">vickyPortfolio</h1>
+                            <h1 className="ml-2 text-xl md:text-2xl font-bold">
+                            VickyPortfolio</h1>
                         </div>
                         <label htmlFor="menu-toggle" className="pointer-cursor md:hidden block">
                             <svg onClick={show} id="show"

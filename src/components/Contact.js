@@ -3,14 +3,14 @@ import React from 'react'
 export default function Contact() {
   return (
     <>
-      <section class="relative pt-2 2xl:pt-10 bg-gray-800">
-        <div class="hidden lg:block absolute top-0 right-0 h-full bg-gray-600 w-1/2"></div>
-        <div class="container px-4 mx-auto">
+      <section class="relative pt-2 2xl:pt-10 bg-gray-800 rounded-lg">
+        <div class="hidden lg:block absolute top-0 right-0 h-full bg-gray-600 w-1/2 rounded-lg"></div>
+        <div class="container px-4 mx-auto rounded-lg">
           <div class="max-w-5xl mx-auto">
             <div class="flex flex-wrap -mx-4">
               <div class="relative w-full lg:w-1/2 px-4 pb-20 overflow-hidden">
-                <img class="hidden lg:block absolute bottom-0 right-0 w-full h-screen -mr-20 -mb-52" src="https://images.pexels.com/photos/1187972/pexels-photo-1187972.jpeg?cs=srgb&dl=pexels-paul-cameron-477972-1187972.jpg&fm=jpg" alt="" />
-                <img class="hidden lg:block absolute bottom-0 right-0 -mr-52 -mb-64" src="https://images.pexels.com/photos/1187972/pexels-photo-1187972.jpeg?cs=srgb&dl=pexels-paul-cameron-477972-1187972.jpg&fm=jpg" alt="" />
+                <img class="hidden lg:block absolute bottom-0 right-0 w-full h-screen -mr-20 -mb-52" src="https://bernardmarr.com/wp-content/uploads/2022/04/The-10-Biggest-Technology-Trends-That-Will-Transform-The-Next-Decade.jpg" alt="" />
+                <img class="hidden lg:block absolute bottom-0 right-0 -mr-52 -mb-64" src="https://bernardmarr.com/wp-content/uploads/2022/04/The-10-Biggest-Technology-Trends-That-Will-Transform-The-Next-Decade.jpg" alt="" />
                 <div class="relative max-w-md">
                   <div class="pb-16 mb-8 border-b border-gray-400">
                     <span class="text-lg text-blue-400 font-bold">Have a question?</span>

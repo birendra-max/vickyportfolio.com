@@ -1,6 +1,5 @@
 import React from "react";
 import LinkedImg from "./img/linked-in-img.jfif";
-import Contact from "./Contact";
 import Cv from "./img/Birendra Kumar Pradhan.pdf";
 import Cv1 from "./img/resume1.jpg";
 // import Cv2 from "./img/2.jpg";
@@ -8,6 +7,17 @@ import whatsapp from './img/whatsapp.svg';
 import linkedin from './img/linkedin.svg';
 import github from './img/github.svg';
 import instagram from './img/instagram.svg';
+import html from './img/html.png';
+import css from './img/css';
+import js from './img/js.png';
+import php from './img/php.png';
+import mysql from './img/mysql.png';
+import bootstrap from './img/bootstrap.png';
+import tailwindcss from './img/tailwind-css';
+import reactjs from './img/ReactJS.png';
+import codeigniter from './img/codeigniter.png';
+import wordpress from './img/wordpress.png';
+import linkedinlogo from './img/linkedinlogo.gif';
 
 export default function About() {
   function hideResume() {
@@ -59,16 +69,16 @@ export default function About() {
       </div>
       {/* Popup page */}
 
-      <div id="About" className="h-full p-8 md:mt-10 px-2 md:px-12">
+      <div id="About" className="h-full md:mt-10 px-2 md:px-12">
         <div className="rounded-lg shadow-xl pb-8 backdrop-filter backdrop-blur-none backdrop-saturate-150 bg-opacity-75 border border-gray-300 rounded-lg shadow-md">
-          <div className="w-full md:h-[200px] h-[200px]">
+          <div className="w-full md:h-[300px] h-[100px]">
             <img
-              src="https://www.simplilearn.com/ice9/free_resources_article_thumb/is_web_development_good_career.jpg"
+              src={linkedinlogo}
               className="w-full h-full rounded-tl-lg rounded-tr-lg"
               alt="linkedinbackground"
             />
           </div>
-          <div className="flex flex-col items-center -mt-20">
+          <div className="flex flex-col items-center -mt-14">
             <img
               src={LinkedImg}
               className="w-40 border-4 border-white rounded-full"
@@ -170,10 +180,10 @@ export default function About() {
                 </li>
                 <li className="flex items-center border-b py-2 space-x-2 ">
                   <span className="font-bold w-24">Elsewhere:</span>
-                  <a href="/" title="whatsapp">
+                  <a href="https://api.whatsapp.com/send?phone=9348302141" title="whatsapp">
                     <img src={whatsapp} alt="whatsapp" title="whatsapp" className="h-8 w-8" />
                   </a>
-                  <a href="/" title="instagram">
+                  <a href="https://www.instagram.com/vicky___lacky/" title="instagram">
                     <img src={instagram} alt="instagram" title="instagram" className="h-10 w-10" />
                   </a>
                   <a href="https://www.linkedin.com/in/birendra-kumar-pradhan-487b96269/" title="LinkedIn" alt="linkedin">
@@ -371,30 +381,27 @@ export default function About() {
               <h4 className="text-xl  font-bold">Technical skills</h4>
 
               <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 mt-4 w-full">
-                <img id="imgskills" src="https://img1.daumcdn.net/thumb/R800x0/?scode=mtistory2&fname=https%3A%2F%2Ft1.daumcdn.net%2Fcfile%2Ftistory%2F998EFA4B5ABB7E9F0B" className="backdrop-filter backdrop-blur-none backdrop-saturate-150 bg-opacity-75 border border-gray-300 rounded-lg shadow-md p-2 w-full " alt="html" title="HTML" />
+                <img id="imgskills" src={html} className="backdrop-filter backdrop-blur-none backdrop-saturate-150 bg-opacity-75 border border-gray-300 rounded-lg shadow-md p-2 w-full " alt="html" title="HTML" />
 
-                <img id="imgskills" src="https://cdn.pixabay.com/photo/2017/08/05/11/16/logo-2582747_1280.png" className="backdrop-filter backdrop-blur-none backdrop-saturate-150 bg-opacity-75 border border-gray-300 rounded-lg shadow-md p-2" alt="css" title="CSS" />
-                <img id="imgskills" src="https://i.pinimg.com/originals/98/0b/a0/980ba07956ccfdf81b5060b1795cdcad.png" className="backdrop-filter backdrop-blur-none backdrop-saturate-150 bg-opacity-75 border border-gray-300 rounded-lg shadow-md p-2" alt="javascript" title="JAVASCRIPT" />
+                <img id="imgskills" src={css} className="backdrop-filter backdrop-blur-none backdrop-saturate-150 bg-opacity-75 border border-gray-300 rounded-lg shadow-md p-2" alt="css" title="CSS" />
+                <img id="imgskills" src={js} className="backdrop-filter backdrop-blur-none backdrop-saturate-150 bg-opacity-75 border border-gray-300 rounded-lg shadow-md p-2" alt="javascript" title="JAVASCRIPT" />
 
-                <img id="imgskills" src="https://pngimg.com/d/php_PNG43.png" className="backdrop-filter backdrop-blur-none backdrop-saturate-150 bg-opacity-75 border border-gray-300 rounded-lg shadow-md p-2" alt="php" title="PHP" />
+                <img id="imgskills" src={php} className="backdrop-filter backdrop-blur-none backdrop-saturate-150 bg-opacity-75 border border-gray-300 rounded-lg shadow-md p-2" alt="php" title="PHP" />
 
-                <img id="imgskills" src="https://pngimg.com/d/mysql_PNG9.png" className="backdrop-filter backdrop-blur-none backdrop-saturate-150 bg-opacity-75 border border-gray-300 rounded-lg shadow-md p-2" alt="mysql" title="MYSQL" />
+                <img id="imgskills" src={mysql} className="backdrop-filter backdrop-blur-none backdrop-saturate-150 bg-opacity-75 border border-gray-300 rounded-lg shadow-md p-2" alt="mysql" title="MYSQL" />
 
-                <img id="imgskills" src="https://www.weareconvoy.com/wp-content/uploads/2013/03/blog-wordpress-default.png" className="backdrop-filter backdrop-blur-none backdrop-saturate-150 bg-opacity-75 border border-gray-300 rounded-lg shadow-md p-2" alt="WORDPRESS" title="WORDPRESS" />
+                <img id="imgskills" src={wordpress} className="backdrop-filter backdrop-blur-none backdrop-saturate-150 bg-opacity-75 border border-gray-300 rounded-lg shadow-md p-2" alt="WORDPRESS" title="WORDPRESS" />
 
-                <img id="imgskills" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEid0QPsjXkWu1NbHvWugsNZVU6X1c9KmzgZwdYyQD8WRQFMBVBl6QIcHQDzEkwmTVnLhSyiRguPk2IPokk192iT_NDQE2i_2rwRgbp2tYdlhVTYNu6tWD432Ud1QX5AHawRvQMfv5hBKdoBeSlhZF4y8pzCL_FxTyj41OArDOaYyY59Xunv3DTb8SUv/s522/ReactJS.png" className="backdrop-filter backdrop-blur-none backdrop-saturate-150 bg-opacity-75 border border-gray-300 rounded-lg shadow-md p-2" alt="react" title="REACT JS" />
+                <img id="imgskills" src={reactjs} className="backdrop-filter backdrop-blur-none backdrop-saturate-150 bg-opacity-75 border border-gray-300 rounded-lg shadow-md p-2" alt="react" title="REACT JS" />
 
-                <img id="imgskills" src="https://icons.getbootstrap.com/assets/img/icons-hero.png" className="backdrop-filter backdrop-blur-none backdrop-saturate-150 bg-opacity-75 border border-gray-300 rounded-lg shadow-md p-2" alt="bootstrap" title="BOOTSTRAP" />
+                <img id="imgskills" src={bootstrap} className="backdrop-filter backdrop-blur-none backdrop-saturate-150 bg-opacity-75 border border-gray-300 rounded-lg shadow-md p-2" alt="bootstrap" title="BOOTSTRAP" />
 
-                <img id="imgskills" src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/tailwind-css-icon.png" className="backdrop-filter backdrop-blur-none backdrop-saturate-150 bg-opacity-75 border border-gray-300 rounded-lg shadow-md p-2" alt="tailwind css" title="TAILWIND CSS" />
+                <img id="imgskills" src={tailwindcss} className="backdrop-filter backdrop-blur-none backdrop-saturate-150 bg-opacity-75 border border-gray-300 rounded-lg shadow-md p-2" alt="tailwind css" title="TAILWIND CSS" />
 
-                <img id="imgskills" src="https://coregenicsoftwares.com/wp-content/uploads/2022/01/5847eb8bcef1014c0b5e4851.png" className="backdrop-filter backdrop-blur-none backdrop-saturate-150 bg-opacity-75 border border-gray-300 rounded-lg shadow-md p-2" alt="Codeigniter" title="CODEIGNITER" />
+                <img id="imgskills" src={codeigniter} className="backdrop-filter backdrop-blur-none backdrop-saturate-150 bg-opacity-75 border border-gray-300 rounded-lg shadow-md p-2" alt="Codeigniter" title="CODEIGNITER" />
               </div>
             </div>
           </div>
-        </div>
-        <div className="md:mt-40">
-          <Contact />
         </div>
       </div>
     </>

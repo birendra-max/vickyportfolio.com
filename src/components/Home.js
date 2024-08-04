@@ -1,10 +1,13 @@
 import React from "react";
 import VickyImg from "./img/vickyimg3.jpg";
 import About from "./About";
+import HomeBlog from "./HomeBlog";
+import Contact from "./Contact";
+import SubscribeBolg from "./SubscribeBolg";
 
 
 export default function Home() {
-    
+
     return (
         <>
             {/* <!-- Hero --> */}
@@ -121,6 +124,11 @@ export default function Home() {
             </div>
             {/* <!-- Hero --> */}
             <About />
+            <div className="md:mt-2 md:p-8 p-2">
+                {/* <HomeBlog/> */}
+                <SubscribeBolg />
+                <Contact />
+            </div>
         </>
     );
 }

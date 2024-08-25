@@ -1,8 +1,8 @@
 import React from "react";
 import { Link, BrowserRouter, Route, Routes } from 'react-router-dom';
-import Home from "./Home";
-import Blogs from "./Blogs";
-import Projects from './Projects';
+import Home from "./Home/Home";
+import Blogs from "./Blogs/Blogs";
+import Projects from './Projects/Projects';
 import Contact from './Contact';
 import logo1 from './img/logo1.jpeg';
 export default function Nav() {
@@ -74,7 +74,7 @@ export default function Nav() {
                     </header>
                 </div>
                 <Routes>
-                <Route path="/" element={<Home/>}/>
+                <Route path="/" element={<Home />} Contac={Contact} />
                 <Route path="/Blogs" element={<Blogs/>} />
                 <Route path="/Projects" element={<Projects/>} />
                 <Route path="/Contact" element={<Contact/>}/>

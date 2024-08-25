@@ -3,9 +3,9 @@ import React from 'react'
 export default function Contact() {
   return (
     <>
-      <section class="relative pt-2 2xl:pt-10 bg-gray-800 rounded-lg">
+      <section class="relative 2xl:pt-10 bg-gray-800 m-2 rounded-lg">
         <div class="hidden lg:block absolute top-0 right-0 h-full bg-gray-600 w-1/2 rounded-lg"></div>
-        <div class="container px-4 mx-auto rounded-lg">
+        <div class="container px-4 mx-auto ">
           <div class="max-w-5xl mx-auto">
             <div class="flex flex-wrap -mx-4">
               <div class="relative w-full lg:w-1/2 px-4 pb-20 overflow-hidden">

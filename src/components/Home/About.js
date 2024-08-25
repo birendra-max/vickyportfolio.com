@@ -1,23 +1,23 @@
 import React from "react";
-import LinkedImg from "./img/linked-in-img.jfif";
-import Cv from "./img/Birendra Kumar Pradhan.pdf";
-import Cv1 from "./img/resume1.jpg";
+import LinkedImg from "../img/linked-in-img.jfif";
+import Cv from "../img/Birendra Kumar Pradhan.pdf";
+import Cv1 from "../img/resume1.jpg";
 // import Cv2 from "./img/2.jpg";
-import whatsapp from './img/whatsapp.svg';
-import linkedin from './img/linkedin.svg';
-import github from './img/github.svg';
-import instagram from './img/instagram.svg';
-import html from './img/html.png';
-import css from './img/css';
-import js from './img/js.png';
-import php from './img/php.png';
-import mysql from './img/mysql.png';
-import bootstrap from './img/bootstrap.png';
-import tailwindcss from './img/tailwind-css';
-import reactjs from './img/ReactJS.png';
-import codeigniter from './img/codeigniter.png';
-import wordpress from './img/wordpress.png';
-import linkedinlogo from './img/linkedinlogo.gif';
+import whatsapp from "../img/whatsapp.svg";
+import linkedin from "../img/linkedin.svg";
+import github from "../img/github.svg";
+import instagram from "../img/instagram.svg";
+import html from "../img/html.png";
+import css from "../img/css";
+import js from "../img/js.png";
+import php from "../img/php.png";
+import mysql from "../img/mysql.png";
+import bootstrap from "../img/bootstrap.png";
+import tailwindcss from "../img/tailwind-css";
+import reactjs from "../img/ReactJS.png";
+import codeigniter from "../img/codeigniter.png";
+import wordpress from "../img/wordpress.png";
+import linkedinlogo from "../img/linkedinlogo.gif";
 
 export default function About() {
   function hideResume() {
@@ -69,7 +69,7 @@ export default function About() {
       </div>
       {/* Popup page */}
 
-      <div id="About" className="h-full md:mt-10 px-2 md:px-12">
+      <div id="About" className="h-full md:mt-10 px-2 md:px-8">
         <div className="rounded-lg shadow-xl pb-8 backdrop-filter backdrop-blur-none backdrop-saturate-150 bg-opacity-75 border border-gray-300 rounded-lg shadow-md">
           <div className="w-full md:h-[300px] h-[100px]">
             <img
@@ -180,17 +180,51 @@ export default function About() {
                 </li>
                 <li className="flex items-center border-b py-2 space-x-2 ">
                   <span className="font-bold w-24">Elsewhere:</span>
-                  <a href="https://api.whatsapp.com/send?phone=9348302141" title="whatsapp">
-                    <img src={whatsapp} alt="whatsapp" title="whatsapp" className="h-8 w-8" />
+                  <a
+                    href="https://api.whatsapp.com/send?phone=9348302141"
+                    title="whatsapp" target="_blank" rel="noopener noreferrer"
+                  >
+                    <img
+                      src={whatsapp}
+                      alt="whatsapp"
+                      title="whatsapp"
+                      className="h-8 w-8"
+                    />
                   </a>
-                  <a href="https://www.instagram.com/vicky___lacky/" title="instagram">
-                    <img src={instagram} alt="instagram" title="instagram" className="h-10 w-10" />
+                  <a
+                    href="https://www.instagram.com/vicky___lacky/"
+                    title="instagram" target="_blank" rel="noopener noreferrer"
+                  >
+                    <img
+                      src={instagram}
+                      alt="instagram"
+                      title="instagram"
+                      className="h-10 w-10"
+                    />
                   </a>
-                  <a href="https://www.linkedin.com/in/birendra-kumar-pradhan-487b96269/" title="LinkedIn" alt="linkedin">
-                    <img src={linkedin} alt="linkedin" title="linkedin" className="h-8 w-8" />
+                  <a
+                    href="https://www.linkedin.com/in/birendra-kumar-pradhan-487b96269/"
+                    title="LinkedIn"
+                    alt="linkedin" target="_blank" rel="noopener noreferrer"
+                  >
+                    <img
+                      src={linkedin}
+                      alt="linkedin"
+                      title="linkedin"
+                      className="h-8 w-8"
+                    />
                   </a>
-                  <a href="https://github.com/birendra-max?tab=repositories" alt="Github" title="github">
-                    <img src={github} alt="github" title="github" className="h-8 w-8" />
+                  <a
+                    href="https://github.com/birendra-max?tab=repositories"
+                    alt="Github"
+                    title="github" target="_blank" rel="noopener noreferrer"
+                  >
+                    <img
+                      src={github}
+                      alt="github"
+                      title="github"
+                      className="h-8 w-8"
+                    />
                   </a>
                 </li>
               </ul>
@@ -332,7 +366,7 @@ export default function About() {
                   download={true}
                   className="inline-flex text-sm font-medium mt-10 px-4 py-2 tracking-wide bg-green-500 rounded shadow ripple text-center md:w-auto w-full flex justify-center align-center"
                 >
-                  <span className="ml-2">Download My CV </span>
+                  <span className="ml-2 text-white">Download My CV </span>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"
@@ -381,24 +415,84 @@ export default function About() {
               <h4 className="text-xl  font-bold">Technical skills</h4>
 
               <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 mt-4 w-full">
-                <img id="imgskills" src={html} className="backdrop-filter backdrop-blur-none backdrop-saturate-150 bg-opacity-75 border border-gray-300 rounded-lg shadow-md p-2 w-full " alt="html" title="HTML" />
+                <img
+                  id="imgskills"
+                  src={html}
+                  className="backdrop-filter backdrop-blur-none backdrop-saturate-150 bg-opacity-75 border border-gray-300 rounded-lg shadow-md p-2 w-full "
+                  alt="html"
+                  title="HTML"
+                />
 
-                <img id="imgskills" src={css} className="backdrop-filter backdrop-blur-none backdrop-saturate-150 bg-opacity-75 border border-gray-300 rounded-lg shadow-md p-2" alt="css" title="CSS" />
-                <img id="imgskills" src={js} className="backdrop-filter backdrop-blur-none backdrop-saturate-150 bg-opacity-75 border border-gray-300 rounded-lg shadow-md p-2" alt="javascript" title="JAVASCRIPT" />
+                <img
+                  id="imgskills"
+                  src={css}
+                  className="backdrop-filter backdrop-blur-none backdrop-saturate-150 bg-opacity-75 border border-gray-300 rounded-lg shadow-md p-2"
+                  alt="css"
+                  title="CSS"
+                />
+                <img
+                  id="imgskills"
+                  src={js}
+                  className="backdrop-filter backdrop-blur-none backdrop-saturate-150 bg-opacity-75 border border-gray-300 rounded-lg shadow-md p-2"
+                  alt="javascript"
+                  title="JAVASCRIPT"
+                />
 
-                <img id="imgskills" src={php} className="backdrop-filter backdrop-blur-none backdrop-saturate-150 bg-opacity-75 border border-gray-300 rounded-lg shadow-md p-2" alt="php" title="PHP" />
+                <img
+                  id="imgskills"
+                  src={php}
+                  className="backdrop-filter backdrop-blur-none backdrop-saturate-150 bg-opacity-75 border border-gray-300 rounded-lg shadow-md p-2"
+                  alt="php"
+                  title="PHP"
+                />
 
-                <img id="imgskills" src={mysql} className="backdrop-filter backdrop-blur-none backdrop-saturate-150 bg-opacity-75 border border-gray-300 rounded-lg shadow-md p-2" alt="mysql" title="MYSQL" />
+                <img
+                  id="imgskills"
+                  src={mysql}
+                  className="backdrop-filter backdrop-blur-none backdrop-saturate-150 bg-opacity-75 border border-gray-300 rounded-lg shadow-md p-2"
+                  alt="mysql"
+                  title="MYSQL"
+                />
 
-                <img id="imgskills" src={wordpress} className="backdrop-filter backdrop-blur-none backdrop-saturate-150 bg-opacity-75 border border-gray-300 rounded-lg shadow-md p-2" alt="WORDPRESS" title="WORDPRESS" />
+                <img
+                  id="imgskills"
+                  src={wordpress}
+                  className="backdrop-filter backdrop-blur-none backdrop-saturate-150 bg-opacity-75 border border-gray-300 rounded-lg shadow-md p-2"
+                  alt="WORDPRESS"
+                  title="WORDPRESS"
+                />
 
-                <img id="imgskills" src={reactjs} className="backdrop-filter backdrop-blur-none backdrop-saturate-150 bg-opacity-75 border border-gray-300 rounded-lg shadow-md p-2" alt="react" title="REACT JS" />
+                <img
+                  id="imgskills"
+                  src={reactjs}
+                  className="backdrop-filter backdrop-blur-none backdrop-saturate-150 bg-opacity-75 border border-gray-300 rounded-lg shadow-md p-2"
+                  alt="react"
+                  title="REACT JS"
+                />
 
-                <img id="imgskills" src={bootstrap} className="backdrop-filter backdrop-blur-none backdrop-saturate-150 bg-opacity-75 border border-gray-300 rounded-lg shadow-md p-2" alt="bootstrap" title="BOOTSTRAP" />
+                <img
+                  id="imgskills"
+                  src={bootstrap}
+                  className="backdrop-filter backdrop-blur-none backdrop-saturate-150 bg-opacity-75 border border-gray-300 rounded-lg shadow-md p-2"
+                  alt="bootstrap"
+                  title="BOOTSTRAP"
+                />
 
-                <img id="imgskills" src={tailwindcss} className="backdrop-filter backdrop-blur-none backdrop-saturate-150 bg-opacity-75 border border-gray-300 rounded-lg shadow-md p-2" alt="tailwind css" title="TAILWIND CSS" />
+                <img
+                  id="imgskills"
+                  src={tailwindcss}
+                  className="backdrop-filter backdrop-blur-none backdrop-saturate-150 bg-opacity-75 border border-gray-300 rounded-lg shadow-md p-2"
+                  alt="tailwind css"
+                  title="TAILWIND CSS"
+                />
 
-                <img id="imgskills" src={codeigniter} className="backdrop-filter backdrop-blur-none backdrop-saturate-150 bg-opacity-75 border border-gray-300 rounded-lg shadow-md p-2" alt="Codeigniter" title="CODEIGNITER" />
+                <img
+                  id="imgskills"
+                  src={codeigniter}
+                  className="backdrop-filter backdrop-blur-none backdrop-saturate-150 bg-opacity-75 border border-gray-300 rounded-lg shadow-md p-2"
+                  alt="Codeigniter"
+                  title="CODEIGNITER"
+                />
               </div>
             </div>
           </div>

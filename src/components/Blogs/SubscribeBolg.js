@@ -3,7 +3,7 @@ import React from 'react'
 export default function SubscribeBolg() {
     return (
         <div>
-            <div className="max-w-screen-20xl mx-auto px-4 py-12 sm:px-6 lg:py-16 lg:px-2">
+            <div className="max-w-screen-20xl mx-auto px-2 py-12 sm:px-6 lg:py-16 lg:px-2">
                 <div className="px-6 py-6 rounded-lg md:py-12 md:px-12 lg:py-16 lg:px-16 xl:flex xl:items-center"
                     style={{backgroundColor:"#483786"}}>
                     <div className="xl:w-0 xl:flex-1">

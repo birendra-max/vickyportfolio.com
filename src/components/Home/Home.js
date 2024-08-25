@@ -1,12 +1,11 @@
 import React from "react";
-import VickyImg from "./img/vickyimg3.jpg";
+import VickyImg from "../img/vickyimg3.jpg";
 import About from "./About";
-import HomeBlog from "./HomeBlog";
-import Contact from "./Contact";
-import SubscribeBolg from "./SubscribeBolg";
+import SubscribeBolg from "../Blogs/SubscribeBolg.js";
+import Contact from "../Contact.js";
 
 
-export default function Home() {
+export default function Home(Contac) {
 
     return (
         <>
@@ -30,11 +29,11 @@ export default function Home() {
                                 <div className="relative inline-flex mt-9 group">
                                     <div className=" rounded-xl blur-lg filter group-hover:opacity-100 group-hover:duration-200"></div>
 
-                                    <a href="/" class="inline-block px-4 py-3 text-sm font-medium leading-6 text-center uppercase transition bg-pink-500 rounded shadow ripple hover:shadow-lg hover:bg-pink-600 focus:outline-none">
+                                    <a href="/" class="inline-block px-4 py-3 text-sm font-medium leading-6 text-center uppercase transition bg-pink-500 rounded shadow ripple hover:shadow-lg hover:bg-pink-600 focus:outline-none text-white">
                                         Hire Me
                                     </a>
 
-                                    <a href="#About" class="ml-4 inline-block px-4 py-3 text-sm font-medium leading-6 text-center uppercase transition bg-green-500 rounded shadow ripple hover:shadow-lg hover:bg-green-600 focus:outline-none">
+                                    <a href="#About" class="ml-4 inline-block px-4 py-3 text-sm font-medium leading-6 text-center uppercase transition bg-green-500 rounded shadow ripple hover:shadow-lg hover:bg-green-600 focus:outline-none text-white">
                                         About Me
                                     </a>
                                 </div>
@@ -42,7 +41,7 @@ export default function Home() {
 
                             <div className=" md:order-3 order-3 self-end lg:order-last lg:pb-10 lg:col-span-3">
                                 <p className="text-xs font-bold tracking-widest uppercase">
-                                    ⚡️ Latest Picks
+                                    ⚡️ Latest Posts
                                 </p>
 
                                 <div className="mt-6 space-y-6 lg:space-y-8 md:w-80">
@@ -123,11 +122,11 @@ export default function Home() {
                 </section>
             </div>
             {/* <!-- Hero --> */}
-            <About />
+            <About/>
             <div className="md:mt-2 md:p-8 p-2">
                 {/* <HomeBlog/> */}
                 <SubscribeBolg />
-                <Contact />
+                <Contact/>
             </div>
         </>
     );

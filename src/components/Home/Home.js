@@ -26,16 +26,13 @@ export default function Home(Contac) {
                                     You may not always get what you wish for, but through hard
                                     work, you get what you deserve.
                                 </p>
-                                <div className="relative inline-flex mt-9 group">
+                                <div className="relative inline-flex mt-9 group flex justify-around">
                                     <div className=" rounded-xl blur-lg filter group-hover:opacity-100 group-hover:duration-200"></div>
+                                    <a href="#" class="btn mr-2" alt="Hire Me" >Hire Me</a>
 
-                                    <a href="/" class="inline-block px-4 py-3 text-sm font-medium leading-6 text-center uppercase transition bg-pink-500 rounded shadow ripple hover:shadow-lg hover:bg-pink-600 focus:outline-none text-white">
-                                        Hire Me
-                                    </a>
-
-                                    <a href="#About" class="ml-4 inline-block px-4 py-3 text-sm font-medium leading-6 text-center uppercase transition bg-green-500 rounded shadow ripple hover:shadow-lg hover:bg-green-600 focus:outline-none text-white">
-                                        About Me
-                                    </a>
+                                    <button id="aboutMe">
+                                        <a href="#About" alt="About Me">About Me</a>
+                                    </button>
                                 </div>
                             </div>
 
@@ -122,11 +119,11 @@ export default function Home(Contac) {
                 </section>
             </div>
             {/* <!-- Hero --> */}
-            <About/>
+            <About />
             <div className="md:mt-2 md:p-8 p-2">
                 {/* <HomeBlog/> */}
                 <SubscribeBolg />
-                <Contact/>
+                <Contact />
             </div>
         </>
     );

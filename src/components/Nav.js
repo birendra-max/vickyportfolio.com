@@ -22,7 +22,7 @@ export default function Nav() {
     return (
         <>
             <BrowserRouter>
-                <div id="nav" className="w-full h-full bg-teal-400 dark:bg-green-400 dark:text-black text-black">
+                <div id="nav" className="w-full h-full bg-teal-400 dark:bg-green-400 dark:text-black text-black" >
                     <header className="lg:px-16 px-4 flex flex-wrap items-center py-4 shadow-lg">
                         <div id="loader" className="md:pl-10 flex-1 flex justify-space items-center">
                             <img id="logo"

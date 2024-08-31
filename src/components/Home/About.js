@@ -31,7 +31,7 @@ export default function About() {
     <>
       {/* Popup page */}
       <div id="popup" className="fixed z-10 inset-0 overflow-y-auto">
-        <div className="flex items-center justify-center min-h-screen px-4 pt-4 pb-20 text-center sm:block sm:p-0">
+        <div className="flex items-center justify-center min-h-screen px-4 pt-4 pb-20 text-center sm:block sm:p-0" style={{ backdropFilter: "blur(10px)" }}>
           <div className="fixed inset-0 transition-opacity">
             <div className="absolute inset-0 bg-gray-500 opacity-75"></div>
           </div>
@@ -139,7 +139,7 @@ export default function About() {
                     clipRule="evenodd"
                   ></path>
                 </svg>
-                <span>Message</span>
+                <a href="https://www.linkedin.com/messaging/thread/2-N2Y5M2JjZDItNjAyMi00YmVjLThjOGUtZGM0ZThkY2U5YzY3XzAxMA==/">Message</a>
               </button>
             </div>
           </div>
@@ -362,55 +362,33 @@ export default function About() {
                 the digital realm.
               </p>
 
-              <div className="md:flex md:w-[40%] rounded-md shadow-sm sm:ml-3 sm:flex flex-row justify-between">
-                <a
-                  href={Cv}
-                  download={true}
-                  className="inline-flex text-sm font-medium mt-10 px-4 py-2 tracking-wide bg-green-500 rounded shadow ripple text-center md:w-auto w-full flex justify-center align-center"
-                >
-                  <span className="ml-2 text-white">Download My CV </span>
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    strokeWidth={1.5}
-                    stroke="currentColor"
-                    className="size-6 ml-2"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      d="M3 16.5v2.25A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75V16.5M16.5 12 12 16.5m0 0L7.5 12m4.5 4.5V3"
-                    />
-                  </svg>
+              <div className="md:flex md:w-[35%] rounded-md shadow-sm sm:ml-3 flex justify-between items-center w-[100%] mt-10">
+                <a class="button" href={Cv} download={true} type="button" id="ResumeDownload">
+                  <span class="button__text" >Download</span>
+                  <span class="button__icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 35 35" id="bdd05811-e15d-428c-bb53-8661459f9307" data-name="Layer 2" class="svg"><path d="M17.5,22.131a1.249,1.249,0,0,1-1.25-1.25V2.187a1.25,1.25,0,0,1,2.5,0V20.881A1.25,1.25,0,0,1,17.5,22.131Z"></path><path d="M17.5,22.693a3.189,3.189,0,0,1-2.262-.936L8.487,15.006a1.249,1.249,0,0,1,1.767-1.767l6.751,6.751a.7.7,0,0,0,.99,0l6.751-6.751a1.25,1.25,0,0,1,1.768,1.767l-6.752,6.751A3.191,3.191,0,0,1,17.5,22.693Z"></path><path d="M31.436,34.063H3.564A3.318,3.318,0,0,1,.25,30.749V22.011a1.25,1.25,0,0,1,2.5,0v8.738a.815.815,0,0,0,.814.814H31.436a.815.815,0,0,0,.814-.814V22.011a1.25,1.25,0,1,1,2.5,0v8.738A3.318,3.318,0,0,1,31.436,34.063Z"></path></svg></span>
                 </a>
 
-                <button
-                  type="button"
-                  onClick={showResume}
-                  className="inline-flex text-sm text-white font-medium mt-2 md:mt-10 px-4 py-2 tracking-wide bg-blue-600 hover:bg-blue-700 rounded shadow ripple md:w-auto w-full flex justify-center align-center"
-                >
-                  <span className="ml-2">View My CV </span>
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
+                <button class="view-cv-button" onClick={showResume}>
+                  <svg xmlns="http://www.w3.org/2000/svg"
                     fill="none"
                     viewBox="0 0 24 24"
                     strokeWidth={1.5}
                     stroke="currentColor"
-                    className="size-6 ml-2"
-                  >
+                    className="size-6 ml-2">
                     <path
                       strokeLinecap="round"
                       strokeLinejoin="round"
-                      d="M2.036 12.322a1.012 1.012 0 0 1 0-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178Z"
-                    />
+                      d="M2.036 12.322a1.012 1.012 0 0 1 0-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178Z" />
                     <path
                       strokeLinecap="round"
                       strokeLinejoin="round"
-                      d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"
-                    />
+                      d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
                   </svg>
+                  <span>View My Cv</span>
                 </button>
+
+
+
               </div>
             </div>
             <div className="flex-1 rounded-lg shadow-xl mt-4 p-8 backdrop-filter backdrop-blur-none backdrop-saturate-150 bg-opacity-75 border border-gray-300 rounded-lg shadow-md">

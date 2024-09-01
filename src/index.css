@@ -33,8 +33,11 @@ code {
 }
 /* nav style start  */
 #nav {
-  position: static;
+  position: fixed;
   z-index: 999;
+}
+nav ul {
+  height: 100%;
 }
 nav ul li {
   font-family: "Libre Baskerville", serif;
@@ -43,7 +46,7 @@ nav ul li {
 }
 
 nav ul li a:focus {
-  color: red;
+  color: rgb(63, 12, 12);
 }
 nav ul li a:active {
   color: red;
@@ -215,21 +218,24 @@ nav ul li a:active {
 }
 /* From About me button style */
 
-/* Download my cv button style */ 
+/* Download my cv button style */
 #ResumeDownload {
   position: relative;
-  width: 150px;
+  width: 140px;
   height: 40px;
   cursor: pointer;
   display: flex;
   align-items: center;
+  font-size: 1rem;
   border: 1px solid #4fd1c5;
   background-color: #2fddac;
   overflow: hidden;
   box-shadow: 0 0.7em 1.5em -0.5em rgba(59, 48, 78, 0.527);
 }
 
-#ResumeDownload, .button__icon, .button__text {
+#ResumeDownload,
+.button__icon,
+.button__text {
   transition: all 0.3s;
 }
 
@@ -243,7 +249,7 @@ nav ul li a:active {
   position: absolute;
   transform: translateX(109px);
   height: 100%;
-  width: 39px;
+  width: 30px;
   background-color: #1d7e62;
   display: flex;
   align-items: center;
@@ -256,7 +262,7 @@ nav ul li a:active {
 }
 
 #ResumeDownload:hover {
-  background: #17795E;
+  background: #17795e;
 }
 
 #ResumeDownload:hover .button__text {
@@ -276,11 +282,11 @@ nav ul li a:active {
   border: 1px solid #146c54;
 }
 
-/* Download my cv button style */ 
+/* Download my cv button style */
 
+/* From Uiverse.io by vinodjangid07 */
+/* From Uiverse.io by jamik-dev */
 
-/* From Uiverse.io by vinodjangid07 */ 
-/* From Uiverse.io by jamik-dev */ 
 .view-cv-button {
   display: flex;
   align-items: center;
@@ -292,7 +298,7 @@ nav ul li a:active {
   background: linear-gradient(144deg, #af40ff, #5b42f3 50%, #00ddeb);
   border: none;
   box-shadow: 0 0.7em 1.5em -0.5em rgba(59, 48, 78, 0.527);
-  letter-spacing: 0.05em;
+  letter-spacing: 0.03em;
   cursor: pointer;
   position: relative;
   transition: all 0.2s;
@@ -356,4 +362,11 @@ nav ul li a:active {
   border-top-left-radius: 0px;
   border-bottom-left-radius: 0px;
   transform: translate(-5px, 15px) rotate(45deg);
+}
+
+/* disable increment and decrement buttons of type='number' input tag  */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }

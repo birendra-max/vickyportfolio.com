@@ -18,7 +18,7 @@ export default function FlottingButton() {
             {/* <!-- floting button --> */}
             <div className="group fixed bottom-0 right-0 p-2 pb-6 pr-4 flex items-end justify-end w-24 h-24">
                 {/* <!-- setting icon --> */}
-                <div className="text-white shadow-xl flex items-center justify-center p-3 rounded-full bg-gradient-to-r from-cyan-500 to-blue-500 z-50 absolute cursor-pointer">
+                <div className="text-white shadow-xl flex items-center justify-center p-3 rounded-full bg-gradient-to-r from-cyan-500 to-blue-500 z-100 absolute cursor-pointer">
                     <svg
                         xmlns="http://www.w3.org/2000/svg"
                         fill="none"

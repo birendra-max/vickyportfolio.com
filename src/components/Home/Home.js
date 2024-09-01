@@ -10,7 +10,7 @@ export default function Home(Contac) {
     return (
         <>
             {/* <!-- Hero --> */}
-            <div id="home">
+            <div id="home" className="pt-20">
                 <section className="md:p-8 md:py-10 p-2">
                     <div className="px-4 mx-auto sm:px-4 lg:px-32 max-w-9xl border border-gray-300 rounded-lg shadow-md py-8">
                         <div className="py-8 grid max-w-md grid-cols-1 mx-auto lg:grid-cols-12 gap-x-10 gap-y-2 lg:max-w-none ">

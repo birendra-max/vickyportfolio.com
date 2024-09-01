@@ -1,4 +1,5 @@
 import React from 'react'
+import music from './img/Syn+Cole+-+Feel+Good+_+Future+House+_+NCS+-+Copyright+Free+Music.mp3';
 
 export default function FlottingButton() {
     function darkMode() {
@@ -13,10 +14,12 @@ export default function FlottingButton() {
         document.getElementById("root").classList.add("white");
         document.getElementById("body").style.transition = "all 2s";
     }
+
     return (
         <>
             {/* <!-- floting button --> */}
             <div className="group fixed bottom-0 right-0 p-2 pb-6 pr-4 flex items-end justify-end w-24 h-24">
+
                 {/* <!-- setting icon --> */}
                 <div className="text-white shadow-xl flex items-center justify-center p-3 rounded-full bg-gradient-to-r from-cyan-500 to-blue-500 z-100 absolute cursor-pointer">
                     <svg
@@ -40,7 +43,7 @@ export default function FlottingButton() {
                     </svg>
                 </div>
                 {/* <!-- music start left --> */}
-                <div className="absolute rounded-full transition-all duration-[0.2s] ease-out scale-y-0 group-hover:scale-y-100 group-hover:-translate-x-16   flex  p-2 hover:p-3 bg-green-300 scale-100 hover:bg-green-400 text-white cursor-pointer">
+                {/* <div className="absolute rounded-full transition-all duration-[0.2s] ease-out scale-y-0 group-hover:scale-y-100 group-hover:-translate-x-16   flex  p-2 hover:p-3 bg-green-300 scale-100 hover:bg-green-400 text-white cursor-pointer">
                     <svg
                         xmlns="http://www.w3.org/2000/svg"
                         fill="none"
@@ -55,7 +58,7 @@ export default function FlottingButton() {
                             d="m9 9 10.5-3m0 6.553v3.75a2.25 2.25 0 0 1-1.632 2.163l-1.32.377a1.803 1.803 0 1 1-.99-3.467l2.31-.66a2.25 2.25 0 0 0 1.632-2.163Zm0 0V2.25L9 5.25v10.303m0 0v3.75a2.25 2.25 0 0 1-1.632 2.163l-1.32.377a1.803 1.803 0 0 1-.99-3.467l2.31-.66A2.25 2.25 0 0 0 9 15.553Z"
                         />
                     </svg>
-                </div>
+                </div> */}
                 {/* <!-- light mode top --> */}
                 <div
                     onClick={whiteMode}

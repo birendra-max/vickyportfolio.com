@@ -3,7 +3,7 @@ import React from 'react'
 export default function Contact() {
   return (
     <>
-      <section className='lg:m-4 lg:pt-20'>
+      <section className='lg:m-4 lg:pt-20  m-2 pt-20'>
         <div class="font-[sans-serif] max-w-screen-20xl mx-auto relative rounded-lg py-8n p-4 border border-gray-300 rounded-lg shadow-md">
           <div class="grid lg:grid-cols-3 items-center">
             <div class="grid sm:grid-cols-2 gap-4 relative lg:left-16 max-lg:px-4">
